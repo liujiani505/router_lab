@@ -1,13 +1,14 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {Navbar, NavA} from '../Styles'
 
 function Nav(props){
     return(
-        <div className="nav">
-            <Link to="/"><div>Home</div></Link>
-            <Link to="/about"><div>About</div></Link>
-            <Link to="/dashboard"><div>Dashboard</div></Link>
-        </div>
+        <Navbar>
+            <Link to="/"><NavA>Home</NavA></Link>
+            <Link to="/about"><NavA>About</NavA></Link>
+            <Link to="/dashboard"><NavA>Dashboard</NavA></Link>
+        </Navbar>
     )
 }
 
